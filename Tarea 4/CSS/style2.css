@@ -1,0 +1,111 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #1a68d4;
+    --secondary: #f6f101;
+    --otro1: #7a0808;
+    --primaryfont: Arial, sans-serif;
+}
+
+body {
+    font-family: vat(--primaryfont);
+    background-color: rgb(75, 75, 75);
+}
+
+
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    background-color: var(--white);
+    padding: 20px;
+}
+
+
+.hero {
+    background-image: url(/Basket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero h3 {
+    color: var(--white);
+    text-align: center;
+}
+ 
+
+
+.subject {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .subject .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subject h3 {
+    color: var(--primar);
+    text-align: center;
+    font-weight: normal;
+    margin: 10px 0 5px; /* Adjust the margins */
+  }
+  
+  .subject p {
+    line-height: 1.5;
+  }
+  
+  .subject .imagen1,
+  .subject .imagen2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    object-fit: cover;
+  }
